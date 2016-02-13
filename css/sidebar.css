@@ -23,7 +23,7 @@
   position: relative;
   padding: 15px 15px 15px 15px;
   top: 15px;
-  left: -10px;
+  left: -25px;
   color: #FF0500;
   list-style-position:inside;
   list-style-type: square;
@@ -44,7 +44,8 @@
 }
 
 .bullet-list li:last-child {
-  border-bottom: 15px;
+  list-style-type: none; 
+  border-top: 0;
 }
 
 
@@ -76,6 +77,10 @@
 /* Sidebar small screen version */
 
 @media only screen and (max-width: 992px){
+  .sidebar {
+    border-top: 1px solid #e5e5e5;
+    background-color: #f7f7f7;
+  }
   .headlines-title {
     text-align: center;
     font-size: 21px;
@@ -87,9 +92,6 @@
     width: 100%;
     text-align: center;
     display: block;
-  }
-  .grey-background {
-    border-top: 1px solid #e5e5e5;
   }
 }
 
